@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js"></script>
+    <script src="Cifrados.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="menu">
+          <nav>
+            <ul>
+              <li><a class="smoothscroll Cesar" id="one" href="#Cesar">01</a></li>
+              <li><a class="smoothscroll Viggenere" id="two" href="#Viggenere">02</a></li>
+              <li><a class="smoothscroll creditos" id="three" href="#creditos">Creditos</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div id="Cesar">
+          <div class="contentContainer">
+            <div class="content">
+              <h1 class="header"><span class="primero">01</span><span class="titulote">Cifrado</span> <br>
+                <span class="second">Cesar</span></h1>
+                <h2><center>Ingrese el mensaje a cifrar o descifrar:</center></h2>
+                <center><textarea id="ctext" rows="3" cols="40" class="txtarea"></textarea></center>
+                <br><br>
+                <center><input class="ci1" type="button"  value="CIFRAR" onclick="ccifrar()"></center>
+                <br>
+                <center><input type="button"  value="DESCIFRAR" onclick="cdescifrar()" class="des1"></center>
+                <br><br>
+                <center><textarea id="cresul" readonly rows="3" cols="40" class="txtarea"></textarea></center>
+            </div>
+          </div>
+          <div class="imageContainer">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/PZDVFpG/imagen-2021-09-27-213314.png" alt="imagen-2021-09-27-213314" border="0" top right no-repeat fixed></a> 
+          </div>
+        </div>
+        
+        <div id="Viggenere">
+          <div class="contentContainer">
+            <div class="content">
+              <h1 class="header"><span class="primero">02</span><span class="titulote">Cifrado</span> <br>
+                Viggenere</h1>
+                <h2><center>Ingrese el mensaje a cifrar o descifrar:</center></h2>
+                <center><textarea id="vtext" rows="3" cols="40" class="txtarea"></textarea></center>
+                <h2><center>Ingrese la llave:</center></h2>
+                <center><textarea id="llave" rows="2" cols="40" class="txtarea"></textarea></center>
+                <br><br>
+                <center><input type="button"  value="CIFRAR" onclick="RebuildString(Encriptar(true))" class="ci"></center>
+                <br>
+                <center><input type="button"  value="DESCIFRAR" onclick="RebuildString(Encriptar(false))" class="des"></center>
+                <br><br>
+                <center><textarea id="vresul" readonly rows="3" cols="40" class="txtarea"></textarea></center>
+            </div>
+          </div>
+          <div class="imageContainer">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/f2GRWsg/tabla-tres-U30834880027-PQH-U301624220312d-YG-510x300-abc.jpg" alt="tabla-tres-U30834880027-PQH-U301624220312d-YG-510x300-abc" border="0"></a>
+          </div>
+        </div>
+        
+        <div id="creditos">
+          <div class="contentContainer">
+            <div class="content">
+              <h1 class="header"><br>Martinez Olivares Gerardo Adolfo</h1>
+              
+            </div>
+          </div>
+          <div class="imageContainer">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/3y5rtVs/descargar.jpg" alt="descargar" border="0"></a>
+          </div>
+        </div>
+
+      </div>
+</body>
+</html>
